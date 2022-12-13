@@ -44,8 +44,5 @@ public class l1 {
 		//		System.out.println(a/b);
 		//		System.out.println(a%b);
 
-		//10926.
-
-
 	}
 }

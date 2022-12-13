@@ -1,5 +1,3 @@
-package 사칙연산;
-
 public class Solution_1 {
 	//1.두수의 합
 	class Solution1 {

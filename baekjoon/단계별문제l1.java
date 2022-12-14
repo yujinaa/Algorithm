@@ -44,7 +44,57 @@ public class l1 {
 		//		System.out.println(a/b);
 		//		System.out.println(a%b);
 
-		
+		//10926	
+		//		Scanner sc = new Scanner(System.in);
+		//		String a;
+		//		a= sc.next();
+		//		if(a.equals(a)) {
+		//			System.out.println(a+"??!");
+		//		}else {
+		//			System.out.println(a);
+		//		}	
+
+		//18108
+		//public class l1 {
+		//			public static void main(String args[]){
+		//				Scanner sc = new Scanner(System.in);
+		//				int y = sc.nextInt();
+		//				int sy = (y - 544)+1;
+		//				System.out.println(sy);
+		//
+		//			}
+		//}
+
+		//3003
+		//public class l1 {
+		//			public static void main(String args[]){
+		//				Scanner sc = new Scanner(System.in);
+		//				int[] chess = {1,1,2,2,2,8};
+		//				int[] inputC = new int[chess.length];
+		//				for(int i = 0; i<inputC.length;i++) {
+		//					inputC[i] = sc.nextInt();
+		//					System.out.print(chess[i]-inputC[i] +" ");
+		//				}
+		//			}	
+		//}
+
+
+		//10430
+		//첫째 줄에 (A+B)%C, 둘째 줄에 ((A%C) + (B%C))%C, 셋째 줄에 (A×B)%C, 넷째 줄에 ((A%C) × (B%C))%C를 출력한다.
+//		public class l1 {
+//			public static void main(String args[]){
+//				Scanner sc = new Scanner(System.in);
+//				int A= sc.nextInt();
+//				int B= sc.nextInt();
+//				int C= sc.nextInt();
+//				System.out.println( (A+B)%C );
+//				System.out.println( (A%C + B%C)%C );
+//				System.out.println( (A*B)%C );
+//				System.out.println( (A%C * B%C)%C );
+
+			}
+		}	
+
 
 
 	}

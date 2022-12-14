@@ -1,10 +1,8 @@
-package baekjoon;
+package baekjoon.단계별문제;
 import java.util.*;
 
 public class l1 {
 	public static void main(String args[]){
-//		System.out.println("Hello World");
-		
 		//1000. 
 		//		Scanner sc = new Scanner(System.in);
 		//		int a, b;
@@ -45,6 +43,9 @@ public class l1 {
 		//		System.out.println(a*b);
 		//		System.out.println(a/b);
 		//		System.out.println(a%b);
+
+		
+
 
 	}
 }

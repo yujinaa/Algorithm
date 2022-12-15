@@ -81,21 +81,34 @@ public class l1 {
 
 		//10430
 		//첫째 줄에 (A+B)%C, 둘째 줄에 ((A%C) + (B%C))%C, 셋째 줄에 (A×B)%C, 넷째 줄에 ((A%C) × (B%C))%C를 출력한다.
-//		public class l1 {
-//			public static void main(String args[]){
-//				Scanner sc = new Scanner(System.in);
-//				int A= sc.nextInt();
-//				int B= sc.nextInt();
-//				int C= sc.nextInt();
-//				System.out.println( (A+B)%C );
-//				System.out.println( (A%C + B%C)%C );
-//				System.out.println( (A*B)%C );
-//				System.out.println( (A%C * B%C)%C );
+		//		public class l1 {
+		//			public static void main(String args[]){
+		//				Scanner sc = new Scanner(System.in);
+		//				int A= sc.nextInt();
+		//				int B= sc.nextInt();
+		//				int C= sc.nextInt();
+		//				System.out.println( (A+B)%C );
+		//				System.out.println( (A%C + B%C)%C );
+		//				System.out.println( (A*B)%C );
+		//				System.out.println( (A%C * B%C)%C );
 
-			}
-		}	
-
-
+		//2558.곱셈
+		//public class l1 {
+		//			public static void main(String args[]){
+		//				Scanner sc = new Scanner(System.in);
+		//				int a = sc.nextInt();
+		//				int b = sc.nextInt();
+		//				System.out.println(a*(b%10));
+		//				System.out.println(a*((b%100)/10));
+		//				System.out.println(a*(b/100));
+		//				System.out.println(a*b);
+		//			}	
+		//			}
 
 	}
+}	
+
+
+
+}
 }

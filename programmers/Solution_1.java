@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Solution_1 {
 	//1.두수의 합
 	class Solution1 {
@@ -97,4 +99,12 @@ public class Solution_1 {
 		}
 	}
 	
+	//중앙값 구하기
+	import java.util.ArrayList;
+	class Solution10{
+		public int solution(int array[]) {
+	     ArrayList.sort(array); 
+	    int answer= array[array.length/2];
+	    return answer;
+	    } 
 }

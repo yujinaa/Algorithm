@@ -88,4 +88,13 @@ public class Solution_1 {
 			return answer;
 		}
 	}
+
+	//나머지 구하기
+	class Solution9{
+		public int solution(int num1, int num2) {
+			int answer = num1%num2;
+			return answer;
+		}
+	}
+	
 }

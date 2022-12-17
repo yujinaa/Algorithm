@@ -119,32 +119,44 @@ public class Solution_1 {
 				return answer;
 			}
 		}
-		
+
 		//각도기
 		class Solution12{
-		int solution(int angle) {
-		    int answer = 0;
-		    if( angle<90){
-		        answer = 1;
-		    }else if(angle==90){
-		       answer = 2;
-		    }else if(angle<180){
-		       answer = 3;
-		    }else if(angle==180){
-		      answer = 4;
-		    }
-		    return answer;
-		}
-		
-		//배열 평균값
-		//// numbers_len은 배열 numbers의 길이입니다.
-		class Solution13{
-		double solution(int numbers[], size_t numbers_len) {
-		    double answer=0;
-		    double sum = 0;
-		    for(int i =0;i< numbers_len;i++){
-		        sum+=numbers[i];
-		    }
+			int solution(int angle) {
+				int answer = 0;
+				if( angle<90){
+					answer = 1;
+				}else if(angle==90){
+					answer = 2;
+				}else if(angle<180){
+					answer = 3;
+				}else if(angle==180){
+					answer = 4;
+				}
+				return answer;
+			}
 
-		    return answer=sum/numbers_len;
-		}
+			//배열 평균값
+			//// numbers_len은 배열 numbers의 길이입니다.
+			class Solution13{
+				double solution(int numbers[], size_t numbers_len) {
+					double answer=0;
+					double sum = 0;
+					for(int i =0;i< numbers_len;i++){
+						sum+=numbers[i];
+					}
+
+					return answer=sum/numbers_len;
+				}
+
+				//짝수의 합
+				class Solution14{
+				int solution(int n) {
+					int answer = 0;
+					for(int i =0;i<=n;i++){
+						if(i%2==0){
+							answer +=i;
+						}
+					}
+					return answer;
+				}

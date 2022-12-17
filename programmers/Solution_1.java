@@ -98,13 +98,40 @@ public class Solution_1 {
 			return answer;
 		}
 	}
-	
+
 	//중앙값 구하기
 	import java.util.ArrayList;
 	class Solution10{
 		public int solution(int array[]) {
-	     ArrayList.sort(array); 
-	    int answer= array[array.length/2];
-	    return answer;
-	    } 
-}
+			ArrayList.sort(array); 
+			int answer= array[array.length/2];
+			return answer;
+		} 
+
+
+
+		//나이 출력하기
+		class Solution11{
+			public int solution(int age) {
+				int answer = 0;
+				int year=2022;
+				answer = (year-age)+1;
+				return answer;
+			}
+		}
+		
+		//각도기
+		class Solution12{
+		int solution(int angle) {
+		    int answer = 0;
+		    if( angle<90){
+		        answer = 1;
+		    }else if(angle==90){
+		       answer = 2;
+		    }else if(angle<180){
+		       answer = 3;
+		    }else if(angle==180){
+		      answer = 4;
+		    }
+		    return answer;
+		}

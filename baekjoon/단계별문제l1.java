@@ -1,8 +1,8 @@
 package baekjoon.단계별문제;
 import java.util.*;
 
-public class l1 {
-	public static void main(String args[]){
+//public class l1 {
+//	public static void main(String args[]){
 		//1000. 
 		//		Scanner sc = new Scanner(System.in);
 		//		int a, b;
@@ -106,15 +106,34 @@ public class l1 {
 		//			}
 
 		//10171.고양이
-		public class Main {
-			public static void main(String[] args) {
+		//		public class Main {
+		//			public static void main(String[] args) {
+		//
+		//				System.out.println("\\    /\\");
+		//				System.out.println(" )  ( ')");
+		//				System.out.println("(  /  )");
+		//				System.out.println(" \\(__)|");    
+		//
+		//			}
+		//		}
+//	}}	
 
-				System.out.println("\\    /\\");
-				System.out.println(" )  ( ')");
-				System.out.println("(  /  )");
-				System.out.println(" \\(__)|");    
 
-			}
-		}
+//10172.개
+//|\_/|
+//|q p|   /}
+//( 0 )"""\
+//|"^"`    |
+//||_/=\\__|
+public class l1 {
+	public static void main(String[] args) {
+		System.out.println("|\\_/|");
+		System.out.println("|q p|   /}");
+		System.out.println("( 0 )\"\"\"\\");
+		System.out.println("|\"^\"'    |");    
+		System.out.println("||_/=\\\\__|");    
+	}
+}
+
 
 

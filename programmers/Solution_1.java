@@ -151,24 +151,33 @@ public class Solution_1 {
 
 				//짝수의 합
 				class Solution14{
-				int solution(int n) {
-					int answer = 0;
-					for(int i =0;i<=n;i++){
-						if(i%2==0){
-							answer +=i;
+					int solution(int n) {
+						int answer = 0;
+						for(int i =0;i<=n;i++){
+							if(i%2==0){
+								answer +=i;
+							}
 						}
+						return answer;
 					}
-					return answer;
-				}
-				
-				//중복된 숫자개수
-				// array_len은 배열 array의 길이입니다.
-				class Solution14{
-				int solution(int array[], size_t array_len, int n) {
-				    int answer = 0;
-				    for(int i=0;i<array_len;i++){
-				        if(array[i]==n)
-				          answer++;
-				    }
-				    return answer;
-				}
+
+					//중복된 숫자개수
+					// array_len은 배열 array의 길이입니다.
+					class Solution14{
+						int solution(int array[], size_t array_len, int n) {
+							int answer = 0;
+							for(int i=0;i<array_len;i++){
+								if(array[i]==n)
+									answer++;
+							}
+							return answer;
+						}
+						//양꼬치
+						class Solution15{
+							int solution(int n, int k) {
+								int answer = 0;
+								answer=(n*12000)+((k-(n/10))*2000);
+								return answer;
+							}
+						}
+

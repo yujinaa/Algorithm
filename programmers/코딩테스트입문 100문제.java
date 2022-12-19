@@ -205,7 +205,7 @@ public class Solution_1 {
 						}
 
 
-						//피자나눠먹기
+						//피자나눠먹기(3)
 						class Solution {
 							public int solution(int slice, int n) {
 								int answer = 0;
@@ -216,5 +216,28 @@ public class Solution_1 {
 								}
 								return answer; 
 							} 
+						}
+
+						//피자나눠먹기(1)
+
+						class Solution {
+							public int solution(int n) {
+								int answer = 0;
+								if(n%7==0){
+									answer=n/7;
+								}else{
+									answer=(n/7)+1;
+								}
+								return answer;
+							}
+						}
+
+						//피자나눠먹기(1) 다른풀이
+						class Solution {
+							public int solution(int n) {
+								int answer = (n%7==0) ? n/7 : n/7 + 1;
+
+								return answer;
+							}
 						}
 

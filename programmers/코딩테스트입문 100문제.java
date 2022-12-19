@@ -180,16 +180,27 @@ public class Solution_1 {
 								return answer;
 							}
 						}
-						
+
 						//머쓱이보다 키 큰 사람
 						class Solution16 {
-						    public int solution(int[] array, int height) {
-						        int answer = 0;
-						        for(int i =0;i<array.length;i++)
-						        if(array[i]>height){
-						           answer++;
-						        }
-						         return answer;
-						    }
+							public int solution(int[] array, int height) {
+								int answer = 0;
+								for(int i =0;i<array.length;i++)
+									if(array[i]>height){
+										answer++;
+									}
+								return answer;
+							}
+						}
+
+						//배열 뒤집기
+						class Solution17 {
+							public int[] solution(int[] num_list) {
+								int[] answer = new int[num_list.length];
+								for(int i = 0;i<num_list.length;i++){
+									answer[i]=num_list[num_list.length-i-1];
+								}
+								return answer;
+							}
 						}
 

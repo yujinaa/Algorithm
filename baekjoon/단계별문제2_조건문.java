@@ -87,5 +87,24 @@ public class 단계별문제2_조건문 {
 			}
 		}
 	}
+	//2525.오븐시계
+	import java.util.Scanner;
+	public class Main {
+		public static void main(String args[]){
+			Scanner input = new Scanner(System.in);
+			int a= input.nextInt();
+			int b= input.nextInt();
+			int c = input.nextInt();
+
+			int m = 60 * a+b;   // 시 -> 분
+			m += c;
+
+			a = (m / 60) % 24;
+			b = m % 60;
+
+			System.out.println(a + " " + b);
+
+		}
+	}
 
 }

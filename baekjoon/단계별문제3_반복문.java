@@ -48,19 +48,18 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String args[]){
 		Scanner input = new Scanner(System.in);
-		int x= input.nextInt();
-		int n= input.nextInt();
-		int sum=0;
-		for(int i =1;i<=n;i++) {
-			int a= input.nextInt();
-			int b= input.nextInt();
-
-			sum += a*b;
-		}
-		if(sum==x) 
-			System.out.println("yes");
-		else 
-			System.out.println("no");
-	}
+		int X = input.nextInt();
+        int N = input.nextInt(); 
+        
+        
+        for (int i=0; i<N; i++) {
+            int a = input.nextInt();
+            int b = input.nextInt();
+        
+            X = X-a*b;
+        }
+        
+        if (X == 0) System.out.println("Yes");
+        else System.out.println("No");
+    }    
 }
-

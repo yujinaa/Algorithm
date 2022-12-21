@@ -6,7 +6,19 @@ public class Main {
 	public static void main(String args[]){
 		Scanner input = new Scanner(System.in);
 		int n= input.nextInt();
-		for(int i =2;i<=n;i++) {
+		for(int i =1;i<=9;i++) {
+				System.out.println(n + " * " + i + " = " + n*i);
+
+		}
+	}
+}
+//구구단 다른 풀이(이중 반복문)
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]){
+		Scanner input = new Scanner(System.in);
+		int n= input.nextInt();
+		for(int i;i<=n;i++) {
 			for(int j =1;j<=9;j++) {
 				System.out.println(i + " * " + j + " = " + i*j);
 			}

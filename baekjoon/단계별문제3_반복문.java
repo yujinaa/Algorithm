@@ -40,6 +40,19 @@ public class Main {
 		}
 	}
 }
+//8393.	합
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]){
+		Scanner input = new Scanner(System.in);
+    int n = input.nextInt(); 
+    int sum=0;
+    for (int i=1; i<=n; i++) {
+    	sum+=i;
+    }
+    System.out.println(sum);
+}    
+}
 //25304.	영수증
 //첫째 줄에는 영수증에 적힌 총 금액 X가 주어진다.
 //둘째 줄에는 영수증에 적힌 구매한 물건의 종류의 수 N이 주어진다.
@@ -63,3 +76,4 @@ public class Main {
         else System.out.println("No");
     }    
 }
+

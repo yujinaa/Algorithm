@@ -65,7 +65,7 @@ public class 단계별문제2_조건문 {
 			}else if(x<0 && y<0) {
 				System.out.println("3");
 			}else {
-				System.out.println("14");
+				System.out.println("4");
 			}
 		}
 	}

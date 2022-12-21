@@ -251,7 +251,7 @@ public class Solution_1 {
 								return answer;
 							}
 						}
-						//최댓값 만들기
+						//최댓값 만들기(1)
 						int solution(int numbers[], size_t numbers_len) {
 							int answer = 0;
 							int max=0;
@@ -265,4 +265,5 @@ public class Solution_1 {
 							answer=max;   
 							return answer;          
 						}
-
+						
+						

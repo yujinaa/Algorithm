@@ -265,5 +265,31 @@ public class Solution_1 {
 							answer=max;   
 							return answer;          
 						}
-						
+
+//점의 위치 구하기
+class Solution {
+    public int solution(int[] dot) {
+        int answer = 0;
+        int x = dot[0];
+        int y= dot[1];
+
+        for(int i =1;i<dot.length;i++){
+            if(x>0){
+                if(y>0){
+                    answer=1;
+                }else{
+                    answer=4;
+                }
+            }else{
+                if(y<0){
+                    answer=3;
+                }else{
+                    answer=2;
+                }
+            }
+
+        }
+        return answer;
+    }
+}
 						

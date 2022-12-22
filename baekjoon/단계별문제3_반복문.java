@@ -7,7 +7,7 @@ public class Main {
 		Scanner input = new Scanner(System.in);
 		int n= input.nextInt();
 		for(int i =1;i<=9;i++) {
-				System.out.println(n + " * " + i + " = " + n*i);
+			System.out.println(n + " * " + i + " = " + n*i);
 
 		}
 	}
@@ -45,13 +45,13 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String args[]){
 		Scanner input = new Scanner(System.in);
-    int n = input.nextInt(); 
-    int sum=0;
-    for (int i=1; i<=n; i++) {
-    	sum+=i;
-    }
-    System.out.println(sum);
-}    
+		int n = input.nextInt(); 
+		int sum=0;
+		for (int i=1; i<=n; i++) {
+			sum+=i;
+		}
+		System.out.println(sum);
+	}    
 }
 //25304.	영수증
 //첫째 줄에는 영수증에 적힌 총 금액 X가 주어진다.
@@ -62,19 +62,19 @@ public class Main {
 	public static void main(String args[]){
 		Scanner input = new Scanner(System.in);
 		int X = input.nextInt();
-        int N = input.nextInt(); 
-        
-        
-        for (int i=0; i<N; i++) {
-            int a = input.nextInt();
-            int b = input.nextInt();
-        
-            X = X-a*b;
-        }
-        
-        if (X == 0) System.out.println("Yes");
-        else System.out.println("No");
-    }    
+		int N = input.nextInt(); 
+
+
+		for (int i=0; i<N; i++) {
+			int a = input.nextInt();
+			int b = input.nextInt();
+
+			X = X-a*b;
+		}
+
+		if (X == 0) System.out.println("Yes");
+		else System.out.println("No");
+	}    
 }
 //15552.	빠른 A+B
 import java.io.BufferedReader;
@@ -91,7 +91,7 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		
+
 		int n = Integer.parseInt(br.readLine());
 		for(int i=0;i<n;i++) {
 			st = new StringTokenizer(br.readLine());
@@ -111,16 +111,31 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-    	 BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-         int n = Integer.parseInt(bf.readLine());
-         for(int i = 0; i < n; i++){
-             String s = bf.readLine();
-             int a = Integer.parseInt(s.split(" ")[0]);
-             int b = Integer.parseInt(s.split(" ")[1]);
-             bw.write(a+b+"\n");
-         }
-         bw.flush();
-     }
- }
+	public static void main(String[] args) throws IOException {
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int n = Integer.parseInt(bf.readLine());
+		for(int i = 0; i < n; i++){
+			String s = bf.readLine();
+			int a = Integer.parseInt(s.split(" ")[0]);
+			int b = Integer.parseInt(s.split(" ")[1]);
+			bw.write(a+b+"\n");
+		}
+		bw.flush();
+	}
+}
+//11021	A+B - 7
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]){
+		Scanner input = new Scanner(System.in);
+		int t = input.nextInt();
+
+		for (int i=1; i<=t; i++) {
+			int a = input.nextInt();
+			int b = input.nextInt();
+
+			System.out.println("Case #"+i +": "+(a+b));
+		}
+	}    
+}

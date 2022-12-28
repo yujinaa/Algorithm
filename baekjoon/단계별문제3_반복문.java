@@ -202,3 +202,15 @@ public class Main {
 		}
 	}
 }
+//10951	A+B - 4
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]){
+		Scanner input=new Scanner(System.in);
+		while(input.hasNext()) {
+			int A=input.nextInt();
+			int B=input.nextInt();
+			System.out.println(A+B);
+		}
+	}
+}

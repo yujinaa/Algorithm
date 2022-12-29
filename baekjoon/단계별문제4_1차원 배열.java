@@ -50,3 +50,22 @@ public class Main {
 		System.out.println(arr[0]+" "+arr[n-1]);//배열의 0번쨰 값은 최소값이고 배열길이에서 -1을하면 최댓값이된다.
 	}
 }
+//2562	 최댓값
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]){
+		Scanner input=new Scanner(System.in);
+		int[] arr= new int[9];
+		int max=0;
+		int index=0;
+		for(int i = 0;i<9;i++) {
+			arr[i] = input.nextInt();
+			if(arr[i]>max) {
+				max=arr[i];
+				index =i+1; //인덱스 번호가 아니라 몇번째 수인지 구하라고 하기때문에 인덱스 번호보다 +1을 해준다.
+			}
+		}
+		System.out.println(max);
+		System.out.println(index);
+	}
+}

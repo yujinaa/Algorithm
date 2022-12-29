@@ -214,3 +214,22 @@ public class Main {
 		}
 	}
 }
+//1110	더하기 사이클
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]){
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		int num=n;
+		int count=0;
+		
+		while(true) {
+			num=((num%10)*10)+((num/10+num%10)%10);
+			count++;
+			if(num==n) {
+				System.out.println(count);
+				break;
+			}
+		}
+	}
+}

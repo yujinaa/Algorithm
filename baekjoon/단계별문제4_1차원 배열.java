@@ -35,3 +35,18 @@ public class Main {
 		}
 	}
 }
+//10818	 최소, 최대
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+	public static void main(String args[]){
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		int[] arr= new int[n];
+		for(int i = 0;i<n;i++) {
+			arr[i] = input.nextInt();
+		}
+		Arrays.sort(arr);//sort를 사용하면 배열을 작은값부터 정렬한다.
+		System.out.println(arr[0]+" "+arr[n-1]);//배열의 0번쨰 값은 최소값이고 배열길이에서 -1을하면 최댓값이된다.
+	}
+}

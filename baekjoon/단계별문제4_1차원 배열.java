@@ -131,3 +131,28 @@ public class Main {
 
 	}
 }
+//8958	 OX퀴즈
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]){
+		Scanner input=new Scanner(System.in);
+		int n = input.nextInt();
+		String[] arr = new String[n];
+		for(int i =0;i<arr.length;i++) {
+			arr[i]=input.next();
+		}
+
+		for(int i =0;i<arr.length;i++) {
+			int score=0;
+			int sum=0;
+			for(int j=0;j<arr[i].length();j++) {
+				if(arr[i].charAt(j) == 'O') {
+					score++;
+					sum+=score;
+				} else
+					score=0;
+			}
+			System.out.println(sum);
+		}
+	}
+}

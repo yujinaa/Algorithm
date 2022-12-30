@@ -89,3 +89,45 @@ public class Main {
 		}
 	}
 }
+//1546	 평균
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]){
+		Scanner input=new Scanner(System.in);
+		int n = input.nextInt();
+		int max=0;
+		double avg=0;
+		int[] arr = new int[n];
+		for(int i =0;i<n;i++) {
+			arr[i]= input.nextInt();
+			if(arr[i]>max) {
+				max= arr[i];
+			}
+			avg+=arr[i];
+		}
+		System.out.println(avg/max*100/n);
+
+	}
+}
+//1546	 평균 다른 풀이
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]){
+		Scanner input=new Scanner(System.in);
+		int n = input.nextInt();
+		int max=0;
+		double avg=0;
+		int[] arr = new int[n];
+		for(int i =0;i<n;i++) {
+			arr[i]= input.nextInt();
+			if(arr[i]>max) {
+				max= arr[i];
+			}
+		}
+		for(int i =0;i<n;i++) {
+			avg+=arr[i];
+		}
+		System.out.println(avg/max*100/n);
+
+	}
+}

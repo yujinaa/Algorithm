@@ -1,5 +1,8 @@
 package baekjoon.단계별문제;
 ////10807.개수 세기
+//30번까지 들어갈 수 있는 배열을 만들고, 
+//28개의 번호를 입력받아 반복문을 통해 배열에 담아
+//30번까지 체크를하여 2명의 미제출한 학생 번호를 출력한다. 
 import java.util.Scanner;
 public class Main {
 	public static void main(String args[]){
@@ -67,5 +70,22 @@ public class Main {
 		}
 		System.out.println(max);
 		System.out.println(index);
+	}
+}
+//5597	 과제 안 내신 분..?
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]){
+		Scanner input=new Scanner(System.in);
+		int[] arr = new int[31];
+		for(int i =1;i<=28;i++) {
+			arr[input.nextInt()]++;
+		}
+		for(int i =1;i<=30;i++) {
+			if(arr[i]==0) {
+				System.out.println(i);
+				
+			}
+		}
 	}
 }

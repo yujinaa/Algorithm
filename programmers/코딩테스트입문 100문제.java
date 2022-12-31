@@ -432,4 +432,56 @@ public class Solution_1 {
 								return answer;
 							}
 						}
+						//문자 반복 출력하기
+						class Solution {
+							public String solution(String my_string, int n) {
+								String answer ="";
+								char[] ch= my_string.toCharArray();
+								for(int i = 0;i<ch.length;i++){
+									for(int j = 0;j<n;j++){
+										answer+=ch[i];
+									}
+								}
+								return answer;
+							}
+						}
+						//다른풀이1.
+						class Solution {
+							public String solution(String my_string, int n) {
+								String answer = "";
+								String[] str = my_string.split("");
+								for(int i=0; i<my_string.length(); i++){
+									answer += str[i].repeat(n);
+								}
+								return answer;
+							}
+						}
+						//다른풀이2.
+						class Solution {
+							public String solution(String my_string, int n) {
+								String answer = "";
+
+								for(int i=0; i<my_string.length(); i++){
+									for(int j=0; j<n; j++){
+										answer+=my_string.charAt(i);
+									}
+								}
+
+								return answer;
+							}
+						}
+						//다른풀이3
+						class Solution {
+							public String solution(String my_string, int n) {
+								String answer = "";
+								String arr[] = my_string.split("");
+								for(int i = 0; i < arr.length; i ++) {
+									for(int j = 0; j < n; j++) {
+										answer += arr[i];
+									}
+								}
+								return answer;
+							}
+						}
+
 

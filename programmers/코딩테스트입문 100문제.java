@@ -399,4 +399,10 @@ public class Solution_1 {
 								return answer;
 							}
 						}
+						//아메리카노 다른 풀이
+						class Solution {
+							public int[] solution(int money) {
+								return new int[] { money / 5500, money % 5500 };
+							}
+						}
 

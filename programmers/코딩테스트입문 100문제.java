@@ -337,16 +337,46 @@ public class Solution_1 {
 						}
 						//피자 다른풀이
 						class Solution {
-						    public int solution(int n) {
-						        int answer = 0;
-						        int max = 0;
-						        
-						        for(int i =1;i<=n && i<=6;i++){
-						        if(n%i==0 && 6%i==0){
-						            max=i;
-						        }         
-						        }
-						        answer=n*6/max/6;
-						        return answer;
-						    }
+							public int solution(int n) {
+								int answer = 0;
+								int max = 0;
+
+								for(int i =1;i<=n && i<=6;i++){
+									if(n%i==0 && 6%i==0){
+										max=i;
+									}         
+								}
+								answer=n*6/max/6;
+								return answer;
+							}
+						}
+						//						짝수 홀수 개수
+						class Solution {
+							// num_list_len은 배열 num_list의 길이입니다.
+							public int* solution(int num_list[], size_t num_list_len) {
+								// return 값은 malloc 등 동적 할당을 사용해주세요. 할당 길이는 상황에 맞게 변경해주세요.
+								int* answer = (int*)malloc(1);
+								int odd=0;
+								int even=0;
+								for(int i =0;i<num_list_len;i++){
+									if(num_list[i]%2==0){
+										even++;
+									}else{
+										odd++;
+									}
+								}
+								answer[0]=even;
+								answer[1]=odd;
+								return answer;
+							}
+						}
+						//다른풀이
+						class Solution {
+							// num_list_len은 배열 num_list의 길이입니다.
+							public int* solution(int num_list[], size_t num_list_len) {
+								// return 값은 malloc 등 동적 할당을 사용해주세요. 할당 길이는 상황에 맞게 변경해주세요.
+								for(int i = 0; i < num_list.length; i++) {
+									answer[num_list[i] % 2]++;
+								}
+							}
 						}

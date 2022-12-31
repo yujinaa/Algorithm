@@ -405,4 +405,31 @@ public class Solution_1 {
 								return new int[] { money / 5500, money % 5500 };
 							}
 						}
+						//짝수는 싫어요
+						class Solution {
+							public int[] solution(int n) {
+								int[] answer = new int[(n+1)/2];
+								for(int i =1;i<=n;i++){
+									if(i%2==1){
+										answer[i/2]=i;
+									}
+								}
+								return answer;
+							}
+						}
+						//다른풀이
+						import java.util.*;
+						class Solution {
+							public ArrayList solution(int n) {
+								ArrayList<Integer> answer = new ArrayList<Integer>();
+
+								for(int i=1; i<=n; i++){
+									if(i%2 != 0) {
+										answer.add(i);
+									} 
+								}
+
+								return answer;
+							}
+						}
 

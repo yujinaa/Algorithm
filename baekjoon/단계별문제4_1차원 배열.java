@@ -89,6 +89,30 @@ public class Main {
 		}
 	}
 }
+//3052	 나머지
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]){
+		Scanner input=new Scanner(System.in);
+		int[] arr = new int[10];
+		int count=0;
+		for(int i =0;i<10;i++) {
+			arr[i]=input.nextInt()%42;
+		}
+
+		for(int i =0;i<10;i++) {
+			int temp=0;
+			for(int j=i+1;j<10;j++) {
+				if(arr[i]==arr[j])
+					temp++;
+			}
+			if(temp==0) {
+				count++;
+			}
+		}
+		System.out.println(count);
+	}
+}
 //1546	 평균
 import java.util.Scanner;
 public class Main {
@@ -153,6 +177,37 @@ public class Main {
 					score=0;
 			}
 			System.out.println(sum);
+		}
+	}
+}
+//4344	 평균은 넘겠지
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]){
+		Scanner input=new Scanner(System.in);
+
+		int c=input.nextInt();//케이스수
+		int[] arr;
+
+		for(int i =0;i<c;i++) {
+			int n = input.nextInt();//학생수
+			arr = new int[n];
+			int sum=0;
+
+			for(int j=0;j<n;j++) {
+				int score=input.nextInt();
+				arr[j] = score;
+				sum +=score;
+			}
+			double avg= sum/n;
+			double count=0;
+
+			for(int j = 0;j<n;j++) {
+				if(arr[j] > avg) {
+					count++;
+				}
+			}
+			System.out.printf("%.3f%%\n", count / n * 100);
 		}
 	}
 }

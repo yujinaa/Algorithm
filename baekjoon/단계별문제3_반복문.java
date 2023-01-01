@@ -233,34 +233,3 @@ public class Main {
 		}
 	}
 }
-//4344	 평균은 넘겠지
-import java.util.Scanner;
-public class Main {
-	public static void main(String args[]){
-		Scanner input=new Scanner(System.in);
-
-		int c=input.nextInt();//케이스수
-		int[] arr;
-
-		for(int i =0;i<c;i++) {
-			int n = input.nextInt();//학생수
-			arr = new int[n];
-			int sum=0;
-
-			for(int j=0;j<n;j++) {
-				int score=input.nextInt();
-				arr[j] = score;
-				sum +=score;
-			}
-			double avg= sum/n;
-			double count=0;
-
-			for(int j = 0;j<n;j++) {
-				if(arr[j] > avg) {
-					count++;
-				}
-			}
-			System.out.printf("%.3f%%\n", count / n * 100);
-		}
-	}
-}

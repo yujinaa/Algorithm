@@ -46,3 +46,31 @@ public class Main {
 		}
 	}
 }
+//1065	 한수
+import java.util.Scanner;
+public class Main {
+public static void main(String args[]){
+	Scanner input = new Scanner(System.in);
+	int n = input.nextInt();
+	int result = 99;
+	
+	if(n<100) {
+		System.out.println(n);
+	}else {
+		for(int i =100;i<=n;i++) {
+			result+= chkNum(i);
+		}
+		System.out.println(result);
+	}
+	}
+private static int chkNum(int n) {
+	int hun = n / 100;
+	int ten = n % 100/10;
+	int one = n % 10;
+	// 등차수열의 특징 : 가운데 숫자에 2를 곱하면 직전과 직후 숫자의 합과 동일하다.
+	if (ten * 2 == hun + one) {
+		return 1;
+	}
+	return 0;
+}
+}

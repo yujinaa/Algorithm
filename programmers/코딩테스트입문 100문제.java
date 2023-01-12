@@ -483,5 +483,11 @@ public class Solution_1 {
 								return answer;
 							}
 						}
+						//특정문자 제거하기
+						class Solution {
+						    public String solution(String my_string, String letter) {
+						        return my_string.replace(letter, "");
+						    }
+						}
 
 

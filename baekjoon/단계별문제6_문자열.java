@@ -34,3 +34,15 @@ public class Main {
 		}
 		System.out.println(sum);
 	}
+	//10809	 알파벳 찾기
+	import java.util.Scanner;
+	public class Main {
+		public static void main(String args[]){
+			Scanner input = new Scanner(System.in);
+			String a = input.next();
+	        for (char c = 'a' ; c <= 'z' ; c++) {
+//	        	indexOf()는 특정 문자의 위치를 반환하며, 존재하지 않을 경우 -1을 반환하는 메서드
+	        	System.out.print(a.indexOf(c) + " ");
+	    }
+		}
+	}

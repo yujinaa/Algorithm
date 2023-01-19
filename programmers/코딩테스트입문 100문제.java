@@ -500,5 +500,15 @@ public class Solution_1 {
 						    }
 						    return price;
 						}
+						
+						//자릿수 더하기
+						int solution(int n) {
+						    int answer = 0;
+						    while(n!=0){
+						        answer +=n%10;//입력한 값을 10으로 나눈 나머지를 answer 에 더한다
+						        n/=10; //입력한 값에 10을 나눈다.
+						    }
+						    return answer;
+						}
 
 

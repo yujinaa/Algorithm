@@ -510,5 +510,13 @@ public class Solution_1 {
 						    }
 						    return answer;
 						}
+						//세균증식
+						int solution(int n, int t) {
+						    int answer = 0;
+						    for(int i =0;i<t;i++){
+						    answer = n*=2;
+						    }
+						    return answer;
+						}
 
 

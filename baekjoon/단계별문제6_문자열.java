@@ -109,3 +109,15 @@ public class Main {
 			}
 		}
 	}
+	//2908	 상수
+	import java.util.Scanner;
+	public class Main {
+		public static void main(String args[]){
+			Scanner input = new Scanner(System.in);
+			int num1 = input.nextInt(); 
+			int num2 = input.nextInt();
+			num1 = (num1%10) *100 + ((num1%100)/10)*10 + (num1/100); //num1을 10으로 나눈 나머지에 100을 곱하면 100의 자리가된다.
+			num2 = (num2%10) *100 + ((num2%100)/10)*10 + (num2/100);
+			System.out.println(num1>num2? num1:num2);//삼항연산자로 비교해 큰값을 출력한다.
+		}
+	}

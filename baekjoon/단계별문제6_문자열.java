@@ -153,3 +153,19 @@ public class Main {
 			System.out.println(sec);
 		}
 	}
+	//2941	 크로아티아 알파벳	
+	import java.util.Scanner;
+	public class Main {
+		public static void main(String args[]){
+			Scanner input = new Scanner(System.in);
+			String arr[] = {"c=","c-","dz=","d-","lj","nj","s=","z="};
+			String str = input.nextLine();
+			
+			for (int i = 0; i < arr.length; i++) {
+				if(str.contains(arr[i])) { //입력한 str이 배열 arr에 있는지 확인
+					str= str.replace(arr[i], "0");//찾은 문자를 0으로 변경
+				}
+			}
+			System.out.println(str.length());//str길이만큼 출력
+		}
+	}

@@ -169,3 +169,30 @@ public class Main {
 			System.out.println(str.length());//str길이만큼 출력
 		}
 	}
+	//1316	 그룹 단어 체커
+	import java.util.Scanner;
+	public class Main {
+		public static void main(String args[]){
+			Scanner input = new Scanner(System.in);
+			int n = input.nextInt();
+			int count = 0; 
+			for(int i = 0;i<n;i++) {
+				String word = input.next();
+				boolean check[] = new boolean[26]; // 알파벳 사용 내역
+				boolean temp = true; // 그룹 단어 인지
+				for (int j = 0; j < word.length(); j++) {
+					int index = word.charAt(j)-'a';
+					if(check[index]) { // 사용한적 있는 문자면
+						if(word.charAt(j) != word.charAt(j-1)) { // 이전 문자와 연속되지 않는다면
+							temp = false; // 그룹 단어 아님
+							break;
+						}
+					}else { // 사용한적 없는 문자면
+						check[index] = true; // 문자 사용 체크
+					}
+				}
+				if(temp) count++;
+			}
+			System.out.println(count);
+		}
+	}

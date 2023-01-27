@@ -40,10 +40,10 @@ public class Main {
 		public static void main(String args[]){
 			Scanner input = new Scanner(System.in);
 			String a = input.next();
-	        for (char c = 'a' ; c <= 'z' ; c++) {
-//	        	indexOf()는 특정 문자의 위치를 반환하며, 존재하지 않을 경우 -1을 반환하는 메서드
-	        	System.out.print(a.indexOf(c) + " ");
-	    }
+			for (char c = 'a' ; c <= 'z' ; c++) {
+				//	        	indexOf()는 특정 문자의 위치를 반환하며, 존재하지 않을 경우 -1을 반환하는 메서드
+				System.out.print(a.indexOf(c) + " ");
+			}
 		}
 	}
 	//2675	 문자열 반복
@@ -55,13 +55,13 @@ public class Main {
 			for(int i = 0; i < s; i++) {
 				int count = input.nextInt();
 				String str = input.next();
-				
+
 				for(int j = 0; j < str.length(); j++) {  
 					for(int k = 0; k < count; k++) {
 						System.out.print(str.charAt(j));
 					}
 				}
-	            
+
 				System.out.println();
 			}
 		}
@@ -119,5 +119,37 @@ public class Main {
 			num1 = (num1%10) *100 + ((num1%100)/10)*10 + (num1/100); //num1을 10으로 나눈 나머지에 100을 곱하면 100의 자리가된다.
 			num2 = (num2%10) *100 + ((num2%100)/10)*10 + (num2/100);
 			System.out.println(num1>num2? num1:num2);//삼항연산자로 비교해 큰값을 출력한다.
+		}
+	}
+	//5622	 다이얼
+	import java.util.Scanner;
+	public class Main {
+		public static void main(String args[]){
+			Scanner input = new Scanner(System.in);
+			String str = input.nextLine();
+			char[] arr = str.toCharArray();
+
+			int sec = 0;
+			for (int i = 0; i < arr.length; i++) {
+
+				if (arr[i] >= 'A' && arr[i] <= 'C') {
+					sec += 3;
+				} else if (arr[i] >= 'D' && arr[i] <= 'F') {
+					sec += 4;
+				} else if (arr[i] >= 'G' && arr[i] <= 'I') {
+					sec += 5;
+				} else if (arr[i] >= 'J' && arr[i] <= 'L') {
+					sec += 6;
+				} else if (arr[i] >= 'M' && arr[i] <= 'O') {
+					sec += 7;
+				} else if (arr[i] >= 'P' && arr[i] <= 'S') {
+					sec += 8;
+				} else if (arr[i] >= 'T' && arr[i] <= 'V') {
+					sec += 9;
+				} else if (arr[i] >= 'W' && arr[i] <= 'Z') {
+					sec += 10;
+				}
+			}
+			System.out.println(sec);
 		}
 	}
